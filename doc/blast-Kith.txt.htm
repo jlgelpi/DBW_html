@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>Test with BLAST</title>
+</head>
+
+<body>
+
+<h2>BLASTP 2.2.22 [Sep-27-2009]</h2>
+
+<!--This is a comment-->
+
+<P>Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"<i>Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs</i>",  <b>Nucleic Acids Res</b>. 25:3389-3402.</p>
+
+<table border=1 cellspacing=0 cellpadding=4
+bgcolor=#efefef>
+<tr>
+<td>Query</td>
+<td>sp|Q9QNF7|KITH_HHV1 Thymidine kinase OS=Human herpesvirus 1
+GN=TK PE=1 SV=1</td>
+         <td>(376 letters)</td>
+</tr>
+<tr>
+<td>Database:</td> 
+<td>uniprotkb_pdb</td> 
+<td>           26,239 sequences; 12,118,847 total letters</td>
+</tr>
+</table>
+<hr>
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+SP:KITH_HHV11 P03176 Thymidine kinase OS=Human herpesvirus 1 (st...   748   0.0  
+SP:KITH_EHV4 P24425 Thymidine kinase OS=Equine herpesvirus 4 (st...   226   2e-59
+SP:KITH_VZVO P0C0E6 Thymidine kinase OS=Varicella-zoster virus (...   164   1e-40
+SP:VATA_THET8 Q56403 V-type ATP synthase alpha chain OS=Thermus ...    30   3.1  
+SP:POP1_CAEEL Q10666 Protein pop-1 OS=Caenorhabditis elegans GN=...    28   6.9  
+SP:POLG_HRV16 Q82122 Genome polyprotein OS=Human rhinovirus 16 P...    28   9.0  
+TR:Q1QT89_CHRSD Q1QT89 Mandelate racemase/muconate lactonizing e...    28   9.0  
+SP:PDP_DIACA Q05957 Petal death protein OS=Dianthus caryophyllus...    28   9.0  
+SP:RECA_ECOLI P0A7G6 Protein recA OS=Escherichia coli (strain K1...    28   9.0  
+SP:EX5C_ECOLI P07648 Exodeoxyribonuclease V gamma chain OS=Esche...    28   9.0  
+
+>SP:KITH_HHV11 P03176 Thymidine kinase OS=Human herpesvirus 1 (strain 17) GN=TK
+           PE=1 SV=4
+          Length = 376
+
+ Score =  748 bits (1932), Expect = 0.0
+ Identities = 371/376 (98%), Positives = 373/376 (99%)
+
+Query: 1   MASYPCHQHASAFDQAARSRGHSNRRTALRPRRQQEATEVRLEQKMPTLLRVYIDGPHGM 60
+           MASYPCHQHASAFDQAARSRGH+NRRTALRPRRQQEATEVR EQKMPTLLRVYIDGPHGM
+Sbjct: 1   MASYPCHQHASAFDQAARSRGHNNRRTALRPRRQQEATEVRPEQKMPTLLRVYIDGPHGM 60
+
+Query: 61  GKTTTTQLLVALGSRDDIVYVPEPMTYWQVLGASETIANIYTTQHRLDQGEISAGDAAVV 120
+           GKTTTTQLLVALGSRDDIVYVPEPMTYW+VLGASETIANIYTTQHRLDQGEISAGDAAVV
+Sbjct: 61  GKTTTTQLLVALGSRDDIVYVPEPMTYWRVLGASETIANIYTTQHRLDQGEISAGDAAVV 120
+
+Query: 121 MTSAQITMGMPYAVTDAVLAPHIGGEAGSSHAPPPALTLIFDRHPIAALLCYPAARYLMG 180
+           MTSAQITMGMPYAVTDAVLAPHIGGEAGSSHAPPPALTLIFDRHPIAALLCYPAARYLMG
+Sbjct: 121 MTSAQITMGMPYAVTDAVLAPHIGGEAGSSHAPPPALTLIFDRHPIAALLCYPAARYLMG 180
+
+Query: 181 SMTPQAVLAFVALIPPTLPGTNIVLGALPEDRHIDRLAKRQRPGERLDLAMLAAIRRVYG 240
+           SMTPQAVLAFVALIPPTLPGTNIVLGALPEDRHIDRLAKRQRPGERLDLAMLAAIRRVYG
+Sbjct: 181 SMTPQAVLAFVALIPPTLPGTNIVLGALPEDRHIDRLAKRQRPGERLDLAMLAAIRRVYG 240
+
+Query: 241 LLANTVRYLQGGGSWREDWGQLSGTAVPPQGAEPQSNAGPRPHIGDTLFTLFRAPELLAP 300
+           LLANTVRYLQ GGSWREDWGQLSGTAVPPQGAEPQSNAGPRPHIGDTLFTLFRAPELLAP
+Sbjct: 241 LLANTVRYLQCGGSWREDWGQLSGTAVPPQGAEPQSNAGPRPHIGDTLFTLFRAPELLAP 300
+
+Query: 301 NGDLYNVFAWALDVLAKRLRPMHVFILDYDQSPAGCRDALLQLTSGMVQTHVTTPGSIPT 360
+           NGDLYNVFAWALDVLAKRLR MHVFILDYDQSPAGCRDALLQLTSGMVQTHVTTPGSIPT
+Sbjct: 301 NGDLYNVFAWALDVLAKRLRSMHVFILDYDQSPAGCRDALLQLTSGMVQTHVTTPGSIPT 360
+
+Query: 361 ICDLARTFAREMGEAN 376
+           ICDLARTFAREMGEAN
+Sbjct: 361 ICDLARTFAREMGEAN 376
+
+
+>SP:KITH_EHV4 P24425 Thymidine kinase OS=Equine herpesvirus 4 (strain 1942) GN=TK
+           PE=1 SV=1
+          Length = 352
+
+ Score =  226 bits (576), Expect = 2e-59
+ Identities = 124/334 (37%), Positives = 191/334 (57%), Gaps = 6/334 (1%)
+
+Query: 44  QKMPTLLRVYIDGPHGMGKTTTTQLLVALGSRDD-IVYVPEPMTYWQVLGASETIANIYT 102
+           ++  T++R+Y+DG +G+GK+TT +++ +  S     +Y PEPM YW+ L  ++ I+ IY 
+Sbjct: 20  RRQVTIVRIYLDGVYGIGKSTTGRVMASAASGGSPTLYFPEPMAYWRTLFETDVISGIYD 79
+
+Query: 103 TQHRLDQGEISAGDAAVVMTSAQITMGMPYAVTDAVLAPHIGGEAGSSHAPPPALTLIFD 162
+           TQ+R  QG ++  DAA++    Q     PY +         GG +       P LTL+FD
+Sbjct: 80  TQNRKQQGNLAVDDAALITAHYQSRFTTPYLILHDHTCTLFGGNS-LQRGTQPDLTLVFD 138
+
+Query: 163 RHPIAALLCYPAARYLMGSMTPQAVLAFVALIPPTLPGTNIVLGALPEDRHIDRLAKRQR 222
+           RHP+A+ +C+PAARYL+G M+  A++A VA +P    G NIV+  L  + HI RL  R R
+Sbjct: 139 RHPVASTVCFPAARYLLGDMSMCALMAMVATLPREPQGGNIVVTTLNVEEHIRRLRTRAR 198
+
+Query: 223 PGERLDLAMLAAIRRVYGLLANTVRYLQGGGSWREDWGQLSGTAVPPQGAEPQSNAGPR- 281
+            GE++D+ ++A +R VY +L NT  +L+ G  WR+ WG+L  +    +    Q +A    
+Sbjct: 199 IGEQIDITLIATLRNVYFMLVNTCHFLRSGRVWRDGWGELPTSCGAYKHRATQMDAFQER 258
+
+Query: 282 --PHIGDTLFTLFRAPELLAPNGDLYNVFAWALDVLAKRLRPMHVFILDYDQSPAGCRDA 339
+             P +GDTLF LF+  ELL   G +  V AWALD L  +LR ++VF  D   +P  C  A
+Sbjct: 259 VSPELGDTLFALFKTQELLDDRGVILEVHAWALDALMLKLRNLNVFSADLSGTPRQCA-A 317
+
+Query: 340 LLQLTSGMVQTHVTTPGSIPTICDLARTFAREMG 373
+           +++    ++ + ++   S   +   ARTF  EMG
+Sbjct: 318 VVESLLPLMSSTLSDFDSASALERAARTFNAEMG 351
+
+
+>SP:KITH_VZVO P0C0E6 Thymidine kinase OS=Varicella-zoster virus (strain Oka
+           vaccine) GN=ORF36 PE=1 SV=1
+          Length = 341
+
+ Score =  164 bits (414), Expect = 1e-40
+ Identities = 98/313 (31%), Positives = 164/313 (52%), Gaps = 8/313 (2%)
+
+Query: 49  LLRVYIDGPHGMGKTTTTQLLVA--LGSRDDIVYVPEPMTYWQVLGASETIANIYTTQHR 106
+           +LR+Y+DG +G+GKTT  +  +     + + I+ + EP++YW+ L   + I  IY TQ R
+Sbjct: 12  VLRIYLDGAYGIGKTTAAEEFLHHFAITPNRILLIGEPLSYWRNLAGEDAICGIYGTQTR 71
+
+Query: 107 LDQGEISAGDAAVVMTSAQITMGMPYAVTDAVLAPHIGGEAGS--SHAPPPALTLIFDRH 164
+              G++S  DA  +    Q     P+A+  A ++  +             P   ++ DRH
+Sbjct: 72  RLNGDVSPEDAQRLTAHFQSLFCSPHAIMHAKISALMDTSTSDLVQVNKEPYKIMLSDRH 131
+
+Query: 165 PIAALLCYPAARYLMGSMTPQAVLAFVALIPPTLPGTNIVLGALPEDRHIDRLAKRQRPG 224
+           PIA+ +C+P +RYL+G M+P A+   +  +P   PGTN+V+  +    H+ R++KR RPG
+Sbjct: 132 PIASTICFPLSRYLVGDMSPAALPGLLFTLPAEPPGTNLVVCTVSLPSHLSRVSKRARPG 191
+
+Query: 225 ERLDLAMLAAIRRVYGLLANTVRYLQGGGSWREDWGQLS-GTAVPPQGAEPQSNAGPR-- 281
+           E ++L  +  +R VY +L NT+ +L+   +W   W  LS    V  Q  +       R  
+Sbjct: 192 ETVNLPFVMVLRNVYIMLINTIIFLK-TNNWHAGWNTLSFCNDVFKQKLQKSECIKLREV 250
+
+Query: 282 PHIGDTLFTLFRAPELLAPNGDLYNVFAWALDVLAKRLRPMHVFILDYDQSPAGCRDALL 341
+           P I DTLF + + PEL    G++  ++AW ++ L+  LR M  F+L  +Q+P      L 
+Sbjct: 251 PGIEDTLFAVLKLPELCGEFGNILPLWAWGMETLSNCLRSMSPFVLSLEQTPQHAAQELK 310
+
+Query: 342 QLTSGMVQTHVTT 354
+            L   M   ++++
+Sbjct: 311 TLLPQMTPANMSS 323
+
+
+>SP:VATA_THET8 Q56403 V-type ATP synthase alpha chain OS=Thermus thermophilus
+           (strain HB8 / ATCC 27634 / DSM 579) GN=atpA PE=1 SV=2
+          Length = 578
+
+ Score = 29.6 bits (65), Expect = 3.1
+ Identities = 14/28 (50%), Positives = 16/28 (57%)
+
+Query: 54  IDGPHGMGKTTTTQLLVALGSRDDIVYV 81
+           I GP G GKT T Q L    + D +VYV
+Sbjct: 226 IPGPFGSGKTVTQQSLAKWSNADVVVYV 253
+
+
+>SP:POP1_CAEEL Q10666 Protein pop-1 OS=Caenorhabditis elegans GN=pop-1 PE=1 SV=2
+          Length = 438
+
+ Score = 28.5 bits (62), Expect = 6.9
+ Identities = 29/113 (25%), Positives = 47/113 (41%), Gaps = 9/113 (7%)
+
+Query: 148 GSSHAPPPALTLIFDRHPIAALLCYPAARYLMGSMTPQAVLAFVALIPPTLPGTNIVLGA 207
+           G S A  P    +F  +P AA L  P+  + MG+M+P        + PP+ P     + A
+Sbjct: 84  GYSAAALPMFMPLF-MNPYAAALRSPSLMFPMGAMSPT-----FPMFPPS-PVYGAAIAA 136
+
+Query: 208 LPEDRHIDRLAK-RQRPGERLDLAMLAAIRRVYGLLANTV-RYLQGGGSWRED 258
+               +H + +A    R G  ++   +        +    V R  QGGG  ++D
+Sbjct: 137 AAAKQHFENMAPLNMRAGHPMNQMGMPPYMHPSSMAPQNVDRRAQGGGKAKKD 189
+
+
+>SP:POLG_HRV16 Q82122 Genome polyprotein OS=Human rhinovirus 16 PE=1 SV=4
+          Length = 2153
+
+ Score = 28.1 bits (61), Expect = 9.0
+ Identities = 14/49 (28%), Positives = 24/49 (48%)
+
+Query: 36   EATEVRLEQKMPTLLRVYIDGPHGMGKTTTTQLLVALGSRDDIVYVPEP 84
+            + T +  ++K    + V I GP G GK+ TT  L  + + +  +Y   P
+Sbjct: 1194 KCTNIIKQKKRSEPVAVMIHGPPGTGKSITTSFLARMITNESDIYSLPP 1242
+
+
+>TR:Q1QT89_CHRSD Q1QT89 Mandelate racemase/muconate lactonizing enzyme
+           OS=Chromohalobacter salexigens (strain DSM 3043 / ATCC
+           BAA-138 / NCIMB 13768) GN=Csal_2974 PE=1 SV=1
+          Length = 403
+
+ Score = 28.1 bits (61), Expect = 9.0
+ Identities = 29/103 (28%), Positives = 46/103 (44%), Gaps = 18/103 (17%)
+
+Query: 268 PPQGAEPQSNAGPRPHIGDTLFTLFRAPELLAPNGDLYNVFAWAL-DV-----------L 315
+           P +  EP  ++ P  H+  T   L  AP+L A   + +      L DV           L
+Sbjct: 165 PGERYEPADSSLPAEHVWSTEKYLNHAPKLFAAVRERFGDDLHVLHDVHHRLTPIEAARL 224
+
+Query: 316 AKRLRPMHVFILDYDQSPAGCRDALLQLTSGMVQTHVTTPGSI 358
+            K + P H+F L+ D  PA  +++L      +++ H TTP +I
+Sbjct: 225 GKAVEPYHLFWLE-DCVPAENQESL-----RLIREHTTTPLAI 261
+
+
+>SP:PDP_DIACA Q05957 Petal death protein OS=Dianthus caryophyllus GN=PDP PE=1
+           SV=1
+          Length = 318
+
+ Score = 28.1 bits (61), Expect = 9.0
+ Identities = 16/48 (33%), Positives = 21/48 (43%)
+
+Query: 255 WREDWGQLSGTAVPPQGAEPQSNAGPRPHIGDTLFTLFRAPELLAPNG 302
+           W +  G + G AV P        A  R  IGD+ F L    +  AP+G
+Sbjct: 140 WPKKCGHMRGKAVVPAEEHALKIAAAREAIGDSDFFLVARTDARAPHG 187
+
+
+>SP:RECA_ECOLI P0A7G6 Protein recA OS=Escherichia coli (strain K12) GN=recA PE=1
+           SV=2
+          Length = 353
+
+ Score = 28.1 bits (61), Expect = 9.0
+ Identities = 30/107 (28%), Positives = 45/107 (42%), Gaps = 12/107 (11%)
+
+Query: 52  VYIDGPHGMGKTTTTQLLVALGSRD-------DIVYVPEPMTYWQVLGASETIANIYTTQ 104
+           V I GP   GKTT T  ++A   R+       D  +  +P+ Y + LG    I N+  +Q
+Sbjct: 63  VEIYGPESSGKTTLTLQVIAAAQREGKTCAFIDAEHALDPI-YARKLGVD--IDNLLCSQ 119
+
+Query: 105 HRLDQGEISAGDAAVVMTSAQITMGMPYAVTDAVLAPHIGGEAGSSH 151
+              D GE +      +  S  + + +  +V        I GE G SH
+Sbjct: 120 P--DTGEQALEICDALARSGAVDVIVVDSVAALTPKAEIEGEIGDSH 164
+
+
+>SP:EX5C_ECOLI P07648 Exodeoxyribonuclease V gamma chain OS=Escherichia coli
+           (strain K12) GN=recC PE=1 SV=1
+          Length = 1122
+
+ Score = 28.1 bits (61), Expect = 9.0
+ Identities = 15/48 (31%), Positives = 25/48 (52%), Gaps = 5/48 (10%)
+
+Query: 181 SMTPQAVLAFVALIPPTLPGTNIVLGALPEDRHI-----DRLAKRQRP 223
+           ++TP+ ++  VA I    P    V G+ P DR++     DR A++  P
+Sbjct: 402 TLTPRDIIVMVADIDSYSPFIQAVFGSAPADRYLPYAISDRRARQSHP 449
+
+
+  Database: uniprotkb_pdb
+    Posted date:  Dec 14, 2009 11:00 PM
+  Number of letters in database: 12,118,847
+  Number of sequences in database:  26,239
+  
+Lambda     K      H
+   0.321    0.135    0.412 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Sequences: 26239
+Number of Hits to DB: 9,613,988
+Number of extensions: 432723
+Number of successful extensions: 1097
+Number of sequences better than 10.0: 10
+Number of HSP's gapped: 1091
+Number of HSP's successfully gapped: 10
+Length of query: 376
+Length of database: 12,118,847
+Length adjustment: 101
+Effective length of query: 275
+Effective length of database: 9,468,708
+Effective search space: 2603894700
+Effective search space used: 2603894700
+Neighboring words threshold: 11
+Window for multiple hits: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.9 bits)
+S2: 61 (28.1 bits)

@@ -1,0 +1,31 @@
+<?php
+$tempDir = "/home/dbw00/blasttmp";
+$baseDir = "/home/dbw00/public_html/PDBBrowser";
+$blastHome = "$baseDir/blast";
+$blastExe = "$blastHome/bin/blastall -p blastp -d $blastHome/pdb_seqres.txt -T -e 0.001 -v 100 -b 0";
+//
+
+print_r($_FILES);
+
+// Get Uploaded file if any
+if ($_FILES['seqFile']['tmp_name'])
+	$_REQUEST['seqQuery']=file_get_contents($_FILES['seqFile']['tmp_name']);
+// prepare FASTA file
+$p = strpos($_REQUEST['seqQuery'], '>');
+if (!$p and ($p !== 0)) { // strpos returns False if not found and "0" if first character in the string
+    // It is not already FASTA
+    $_REQUEST['seqQuery'] = ">User provided sequence
+" . $_REQUEST['seqQuery'];
+}
+$tempFile = $tempDir . "/" . uniqId('pdb');
+
+$ff = fopen($tempFile . ".query.fasta", 'wt');
+fwrite($ff, $_REQUEST['seqQuery']);
+fclose($ff);
+
+// execute Blast
+print $blastExe." -i ".$tempFile.".query.fasta -o ".$tempFile.".blast.out";
+exec($blastExe . " -i " . $tempFile . ".query.fasta -o " . $tempFile . ".blast.out");
+#
+passthru("cat $tempFile".".blast.out");
+?>

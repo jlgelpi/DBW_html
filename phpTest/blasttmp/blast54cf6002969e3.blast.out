@@ -1,0 +1,92 @@
+<HTML>
+<TITLE>BLAST Search Results</TITLE>
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" VLINK="#660099" ALINK="#660099">
+<PRE>
+<b>BLASTP 2.2.18 [Mar-02-2008]</b>
+
+
+<b><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&list_uids
+=9254694&dopt=Citation">Reference</a>:</b>
+Altschul, Stephen F., Thomas L. Madden, Alejandro A. Sch&auml;ffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+<b><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&list_uids
+=16218944&dopt=Citation">Reference for compositional score matrix adjustment</a>:</b>
+Altschul, Stephen F., John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Sch&auml;ffer, and Yi-Kuo Yu (2005) "Protein database
+searches using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+<b>Query=</b> sp|P13807|GYS1_HUMAN Glycogen [starch] synthase, muscle
+OS=Homo sapiens GN=GYS1 PE=1 SV=2
+         (737 letters)
+
+<b>Database:</b> sprot 
+           546,790 sequences; 194,613,039 total letters
+
+Searching..................................................done
+
+<PRE>
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+sp|P13807|GYS1_HUMAN Glycogen [starch] synthase, muscle OS=Homo ...  <a href = #161264>1395</a>   0.0  
+sp|Q8MJ26|GYS1_MACMU Glycogen [starch] synthase, muscle OS=Macac...  <a href = #161265>1389</a>   0.0  
+sp|Q5R9H0|GYS1_PONAB Glycogen [starch] synthase, muscle OS=Pongo...  <a href = #161267>1386</a>   0.0  
+sp|A7MB78|GYS1_BOVIN Glycogen [starch] synthase, muscle OS=Bos t...  <a href = #161263>1363</a>   0.0  
+sp|P13834|GYS1_RABIT Glycogen [starch] synthase, muscle OS=Oryct...  <a href = #161268>1360</a>   0.0  
+sp|A2RRU1|GYS1_RAT Glycogen [starch] synthase, muscle OS=Rattus ...  <a href = #161269>1341</a>   0.0  
+sp|Q9Z1E4|GYS1_MOUSE Glycogen [starch] synthase, muscle OS=Mus m...  <a href = #161266>1341</a>   0.0  
+sp|Q8VCB3|GYS2_MOUSE Glycogen [starch] synthase, liver OS=Mus mu...   <a href = #161272>983</a>   0.0  
+sp|P17625|GYS2_RAT Glycogen [starch] synthase, liver OS=Rattus n...   <a href = #161273>978</a>   0.0  
+sp|P54840|GYS2_HUMAN Glycogen [starch] synthase, liver OS=Homo s...   <a href = #161271>978</a>   0.0  
+sp|Q9VFC8|GYS_DROME Glycogen [starch] synthase OS=Drosophila mel...   <a href = #161277>795</a>   0.0  
+sp|O93869|GYS_NEUCR Glycogen [starch] synthase OS=Neurospora cra...   <a href = #161278>746</a>   0.0  
+sp|P23337|GYS1_YEAST Glycogen [starch] synthase isoform 1 OS=Sac...   <a href = #161270>716</a>   0.0  
+sp|Q9U2D9|GYS_CAEEL Probable glycogen [starch] synthase OS=Caeno...   <a href = #161275>714</a>   0.0  
+sp|P27472|GYS2_YEAST Glycogen [starch] synthase isoform 2 OS=Sac...   <a href = #161274>699</a>   0.0  
+sp|Q55GH4|GYS_DICDI Glycogen [starch] synthase OS=Dictyostelium ...   <a href = #161276>639</a>   0.0  
+</PRE>
+<PRE>
+  Database: sprot
+    Posted date:  Nov 28, 2014 12:25 PM
+  Number of letters in database: 194,613,039
+  Number of sequences in database:  546,790
+  
+Lambda     K      H
+   0.322    0.136    0.427 
+
+Gapped
+Lambda     K      H
+   0.267   0.0410    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Sequences: 546790
+Number of Hits to DB: 257,550,942
+Number of extensions: 10522421
+Number of successful extensions: 19631
+Number of sequences better than 1.0e-03: 16
+Number of HSP's gapped: 19583
+Number of HSP's successfully gapped: 16
+Length of query: 737
+Length of database: 194,613,039
+Length adjustment: 125
+Effective length of query: 612
+Effective length of database: 126,264,289
+Effective search space: 77273744868
+Effective search space used: 77273744868
+Neighboring words threshold: 11
+Window for multiple hits: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.9 bits)
+S2: 108 (46.2 bits)
+</PRE>
+</BODY>
+</HTML>

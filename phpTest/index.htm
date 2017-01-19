@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<style>
+body {
+font-family:Verdana, sans-serif; font-size:12px;
+} 
+#container {
+position:relative;
+width:900px;
+margin:0 auto;
+background-color:#ffffff;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td><img src="../images/master_logo.jpg" alt="" width="425" height="125" /></td>
+    <td><h1 align="center">DBW &ndash;  Databases and Web development. 2016-17</h1></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h4>Simple Examples</h4>
+<ul>
+  <li>Recover Uniprot data (Id, and basic info) from keywork using Uniprot query facilitites. <a href="t.php">Uniprot search</a> (<a href="raw.php?file=t.php">code</a>)</li>
+  <li>Parse a (Multi)FASTA file into id, database, basic info (from headers) and sequence. The application should provide a Web form to introduce either A) a Fasta formatted file (pasted or uploaded), or B) a list of Uniprot Ids. Output should be in tabular form (id, database, SwissProt id, and info). <a href="parseFasta.html">Fasta Parser</a> (codes: <a href="raw.php?file=parseFasta.html" target="_blank">parseFasta.html</a>, <a href="raw.php?file=parseFasta1.php" target="_blank">parseFasta1.php</a>, <a href="raw.php?file=getFasta.php" target="_blank">getFasta.php</a>)</li>
+</ul>
+<h4><a name="#basic"></a>Form management</h4>
+<ol>
+<li><b>Form Management</b>: Build a HTML form similar to <a href="../PDBBrowser">PDBBrowser</a>. On the controller page, print the uploaded data and relevant environment variables. </li>
+<li><b>More advanced forms</b>: Build a form similar from above, but generating some fields (Experiment type or compound type) from  the information hold in the PDB database.
+<li><b>Session management</b>: Modify the above form and controller page to remember the inserted data. Consider including error messages from form validation.</li>
+<li><b>On-the-fly Form validation</b>: Basic javascript to validate form input. Check for mandatory fields or formats.</ol>
+<h4>Database browser</h4>
+<ol>
+<li>Generate a form with some fields available in the PDB database. In the controller script build an SQL query and generate the output list. 
+<li>Complete the above with paginated output and column ordering. 
+</ol>
+<h4><a name="#blast"></a>Execute an external application (BLAST) (by 29th Jan)</h4>
+<ol>
+<li>Prepare an application to execute a sequence comparison using Blast. 
+    It should contain an input form to include a sequence (in FASTA or raw), 
+    optionally include a sequence file upload. Execute BLAST, and print the output, 
+    possibly with a nicer formatting.<br>
+    <a href="blast.inc.php.txt">PHP Include file with BLAST details</a></li>
+</ol>
+</div>
+</body>
+</html>

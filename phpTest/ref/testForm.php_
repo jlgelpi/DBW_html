@@ -1,0 +1,80 @@
+<?php 
+session_start();
+print_r ($_SESSION);
+?>
+<html>
+    <head>
+        <title>PDB Browser</title>
+        <link rel="stylesheet" type="text/css" href="estil.css">
+    </head><body bgcolor="#ffffff">
+        <h1>DBW - PDB Browser</h1>
+        <form name="MainForm" action="runBlast.php" method="POST" enctype="multipart/form-data">
+            <table border="0" cellspacing="2" cellpadding="4" align="center">
+                <tbody>
+<tr>
+                        <td><b>PDB Id</b></td>
+                        <td>
+                            <input type="text" name="idCode" value="<?php print $_SESSION['inputData']['idCode']?>" size="5" maxlength="4"/>
+                        </td>
+                    </tr>
+                    <tr><td colspan="2">&nbsp;</td></tr>
+                    <tr>
+                        <td><b>Search fields</b></td>
+                        <td></td>
+                    </tr>
+            <tr><td><input type=radio name=a>A <input type=radio name=a>B</td></tr>
+            <tr><td><select multiple><option value=a>A <option value=b>B<option value=c>C</select></td></tr>
+                    <tr>
+                        <td>Resolution:</td>
+                        <td>From <input type="text" name="minRes" value="0.0" size="5"> to <input type="text" name="maxRes" value="Inf" size="5" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Compound Type:</td>
+                        <td>
+                            <input type="checkbox" name="idCompType[1]" /> nuc
+                            <input type="checkbox" name="idCompType[2]" /> prot
+                            <input type="checkbox" name="idCompType[3]" /> prot-nuc
+                            <input type="checkbox" name="idCompType[4]" /> carb           
+                     <input type="checkbox" name="idCompType[]" /> 
+                            <input type="hidden" name="cmps" value="nuc,prot,prot-num,carb">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Exp Type:</td>
+                        <td>
+                            <input type="radio" name="idExpClasseRadio" /> diffraction
+                            <input type="radio" name="idExpClasseRadio" /> EM
+                            <input type="radio" name="idExpClasseRadio" /> NMR
+                            <br>
+                            <select name="selectExpClass[]" multiple>
+                                <option>difracction
+                                <option>EM
+                                <option>NMR
+                            </select>                       
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text Search:</td>
+                        <td>
+                            <input type="text" name="query" value="" size="60" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><b>Sequence search:</b></td>
+                        <td><textarea name="seqQuery" rows="4" cols="60"><?= $_SESSION['inputData']['seqQuery']?></textarea><br>
+                            Uploaded sequence file: <input type="file" name="seqFile" value="" width="50" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit" /> 
+                            <input type="reset" value="Reset" />
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

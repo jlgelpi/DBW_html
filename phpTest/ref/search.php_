@@ -1,0 +1,18 @@
+<?php 
+session_start();
+?>
+<html>
+<body>
+<h4>This is a PHP Form test</h4>
+<p>The contents of the form was:
+<?php 
+print_r($_REQUEST);
+$_SESSION['inputData'] = $_REQUEST;    
+?>
+<ul>
+<li>Idcode: <?php print $_GET['idCode']?></li>
+<li>MinRes: <?php print $_REQUEST['minRes']?></li>
+<li>MaxRes: <?php print $_REQUEST['maxRes']?></li>
+</body>
+</html>
+

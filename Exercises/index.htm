@@ -1,0 +1,24 @@
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td><img src="../images/master_logo.jpg" alt="" width="425" height="125" /></td>
+    <td><h1 align="center">DBW &ndash;  Databases and Web development</h1></td>
+  </tr>
+</table>
+<h2>&nbsp;</h2>
+<h2>E-R Exercises</h2>
+<p>Define  entities and main relationships of the data needed to deal with the following  situations (Note: use MySQL workbench to draw entities-relationship scheme):</p>
+<ol>
+  <li>Set  of inhibitor data, including nature of the inhibitor compound, enzyme  inhibited,&nbsp; source organism, type of  inhibition (reversible, irreversible, etc.), inhibition constant, and  literature reference. (Solution:: <a href="ERExercisesInhibitor.mwb">mwb</a> <a href="ERExercisesInhibitor.png">png</a>)</li>
+  <li>Protein-Protein  interactions data. Proteins involved (include references to Uniprot and/or  PDB), interaction details (permanent, transient, etc), experimental data and  literature references.  (Solution:: <a href="ERExercisesInteraction.mwb">mwb</a> <a href="ERExercisesInteraction.png">png</a>)</li>
+  <li>Genotype  data, about 250000 SNPs for a large number of individuals. Consider two  options: a) We should get information for individual SNPs, and b) only complete  haplotypes should be retrieved. (Solution::<a href="ERExercisesSNPs.png">png</a>)</li>
+  <li>User  management, including specific levels of privilege like administration,  readwrite data, read-only, and personal preferences. The model should be open  enough to be used in any application.  (Solution:: <a href="ERExercisesUser.mwb">mwb</a> <a href="ERExercisesUser.png">png</a>)</li>
+  <li>Expression  analysis for a set of genes, and experimental conditions. For the stored genes  should allow including annotations and references to other DBs.  (Solution:: <a href="ERExercisesExpression.mwb">mwb</a> <a href="ERExercisesExpression.png">png</a>)</li>
+  <li>A  metabolic network, including, enzymes, metabolites and chemical processes  involved.  (Solution:: <a href="ERExercisesMetabol.mwb">mwb</a> <a href="ERExercisesMetabol.png">png</a>)</li>
+</ol>
+<h4>Evaluated exercises (by 30th Jan)</h4>
+<p>You are the data manager of a bioinformatics support service and need to build a database to store data from your users' studies. The following cases have just arrived. Define a data model (entities, atrributes and relationships) to hold data from one of them.
+<ul>
+<li>A series of GWAS (Genome Wide Association Studies) based on SNP-arrays data. Data includes: 1) a variable set of phenotipic traits. 2) Reference, supplier and genes included in SNP-array used in the study, 3) Sample and user details, 4) GWAS results: genes and associated statistics.</li>
+<li>A series of proteomics analysis. Data includes: 1) Sample and user details, 2) Experimental protocols used, 3) Protein sequences found, 4) Identified proteins from sequences</li>
+</ul>
+<p>&nbsp;</p>
