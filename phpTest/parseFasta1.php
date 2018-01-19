@@ -28,6 +28,7 @@ if (!$_REQUEST['fasta']) { ?>
                 continue;
             # Clean id spaces and lines
             $id = preg_replace("/[ \r]/","",$id);
+            print "-$id-";
             # get Uniprot Fasta
             $thisFasta = file_get_contents("http://www.uniprot.org/uniprot/$id.fasta");
             if (!isFasta($thisFasta)) {
@@ -54,7 +55,7 @@ if (!$_REQUEST['fasta']) { ?>
         <script type="text/javascript" src="DataTable/jquery.dataTables.min.js"></script>
    </head>
     <body>
-        <p>Processed //<?php print count($_SESSION['data'])?> unique sequence(s)</p>
+        <p>Processed <?php print count($_SESSION['data'])?> unique sequence(s)</p>
         <table border="0" cellspacing="2" cellpadding="4" id="dataTable">
             <thead>
                 <tr>
@@ -68,7 +69,7 @@ if (!$_REQUEST['fasta']) { ?>
             <tbody>
                 <?php foreach ($_SESSION['data'] as $p) {?>
                 <tr>
-                    <td><a href="getFasta.php?id=//<?php print $p['id']?>"><?php print $p['id'] ?></a></td>
+                    <td><a href="getFasta.php?id=<?php print $p['id']?>"><?php print $p['id'] ?></a></td>
                     <td><?php print $p['db'] ?></td>
                     <td><?php print $p['swpid'] ?></td>
                     <td><?php print $p['info'] ?></td>
