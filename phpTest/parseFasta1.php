@@ -28,7 +28,6 @@ if (!$_REQUEST['fasta']) { ?>
                 continue;
             # Clean id spaces and lines
             $id = preg_replace("/[ \r]/","",$id);
-            print "-$id-";
             # get Uniprot Fasta
             $thisFasta = file_get_contents("http://www.uniprot.org/uniprot/$id.fasta");
             if (!isFasta($thisFasta)) {
