@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <title>Parse FASTA Service</title>
@@ -7,13 +7,15 @@
     <body>
         <h2>FASTA File analysis</h2>
         <p>Parses FASTA files in Uniprot format, giving the result in a tabular form, and links to the original FASTA format.</p>
-        <form action="parseFasta1.php" id="input" method="POST" enctype="multipart/form-data">
+
+        <form action="parseFasta1.php" id="input" name="input" method="POST" enctype="multipart/form-data">
             <p><em>Enter (Multi)FASTA sequence files or a list of Uniprot ids</em></p>
-            <textarea name="fasta" cols="60" rows="5"></textarea><br>   
+            <textarea name="fasta" cols="60" rows="5">This is default text</textarea><br>
+
             <input name="uploadFile" type="file"><br>
             <br>
-            <input type="submit" value="Submit"> <input type="reset" value="Clean data">
-            
+            <input type="submit" value="Send data"> <input type="reset" value="Clear data">
+
         </form>
     </body>
 </html>

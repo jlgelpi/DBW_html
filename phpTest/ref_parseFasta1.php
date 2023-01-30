@@ -1,9 +1,30 @@
 <?php
+# Functions
+function isFasta($f) {
+    return (substr($f,0,1) == ">");
+}
+
+function parse_Fasta ($f) {
+    $sqs = explode(">", $f);
+    $data = [];
+    foreach ($sqs as $s) {
+        if ($s) {
+            $lines = explode("\n",$s,2);
+            list($db,$id,$info) = explode("|",$lines[0]);
+            list ($swp,$info) = explode(" ",$info,2);
+            $data[$id] = ['db'=> $db, 'id'=> $id, 'swpid' => $swp, 'info' => $info, 'sequence' => $lines[1]];
+        }
+    }
+    return $data;
+}
+
 #start Session to hold input data
 session_start();
+
 # Check if input comes from an uploaded file
+
 if ($_FILES['uploadFile']['name']) {
-    $_REQUEST['fasta']=  file_get_contents($_FILES['uploadFile']['tmp_name']);
+    $_REQUEST['fasta'] = file_get_contents($_FILES['uploadFile']['tmp_name']);
 }
 if (!$_REQUEST['fasta']) { ?>
 <html>
@@ -23,19 +44,19 @@ if (!$_REQUEST['fasta']) { ?>
         $idList = explode("\n", $_REQUEST['fasta']);
         $fasta = '';
         foreach ($idList as $id) {
-            if (!$id) 
+            if (!$id)
                 continue;
             # Clean id spaces and lines
             $id = preg_replace("/[ \r]/","",$id);
             # get Uniprot Fasta
-            $thisFasta = file_get_contents("http://www.uniprot.org/uniprot/$id.fasta");
+            $thisFasta = file_get_contents("https://rest.uniprot.org/uniprotkb/$id.fasta");
             if (!isFasta($thisFasta)) {
                 print "<p>Error: $id not found</p>";
             } else {
                 $fasta .= $thisFasta;
             }
         }
-            
+
     } else {
         $fasta = $_REQUEST['fasta'];
     }
@@ -45,15 +66,16 @@ if (!$_REQUEST['fasta']) { ?>
 <html>
     <head>
         <style type="text/css">
+            body {font-family:Verdana, Arial, Sans-serif}
             thead {background-color: #cccccc;color:#ffffff}
             tbody {background-color: #ffffff};
         </style>
-        <link rel="stylesheet" href="DataTable/jquery.dataTables.min.css"/>
-        <script type="text/javascript" src="DataTable/jquery-2.2.0.min.js"></script>
-        <script type="text/javascript" src="DataTable/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="../css/lib/jquery.dataTables.min.css"/>
+        <script type="text/javascript" src="../js/lib/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="../js/lib/jquery.dataTables.min.js"></script>
    </head>
     <body>
-        <p>Processed //<?php print count($_SESSION['data'])?> unique sequence(s)</p>
+        <p>Processed <?php print count($_SESSION['data'])?> unique sequence(s)</p>
         <table border="0" cellspacing="2" cellpadding="4" id="dataTable">
             <thead>
                 <tr>
@@ -67,11 +89,11 @@ if (!$_REQUEST['fasta']) { ?>
             <tbody>
                 <?php foreach ($_SESSION['data'] as $p) {?>
                 <tr>
-                    <td><a href="getFasta.php?id=//<?php print $p['id']?>"><?php print $p['id'] ?></a></td>
-                    <td><?php print $p['db'] ?></td>
-                    <td><?php print $p['swpid'] ?></td>
-                    <td><?php print $p['info'] ?></td>
-                    <!--<td><pre><?php print $p['sequence'] ?></pre></td>-->
+                    <td><a href="getFasta.php?id=<?=$p['id']?>"><?=$p['id']?></a></td>
+                    <td><?=$p['db']?></td>
+                    <td><?=$p['swpid']?></td>
+                    <td><?=$p['info']?></td>
+                    <!--<td><pre><?=$p['sequence']?></pre></td>-->
                 </tr>
                 <?php } ?>
             </tbody>
@@ -83,23 +105,3 @@ if (!$_REQUEST['fasta']) { ?>
         $('#dataTable').DataTable();
     });
 </script>
-
-<?php
-function isFasta($f) {
-    return (substr($f,0,1) == ">");
-}
-
-function parse_Fasta ($f) {
-    $sqs = explode(">", $f);
-    $data=Array();
-    foreach ($sqs as $s) {
-        if ($s) {
-            $lines = explode("\n",$s,2);
-            list($db,$id,$info) = explode("|",$lines[0]);
-            list ($swp,$info) = explode(" ",$info,2);
-            $data[$id] = array('db'=> $db, 'id'=> $id, 'swpid' => $swp, 'info' => $info, 'sequence' => $lines[1]);
-        }
-    }
-    return $data;
-}
-?>
