@@ -5,8 +5,8 @@ if (!$q) {
     exit;
 }
 $q = urlencode($q);
-#http://www.uniprot.org/uniprot/?query=brca&sort=score&format=tab&limit=100
-$url = "http://www.uniprot.org/uniprot/?query=$q&sort=score&format=tab&limit=100";
+$url = "https://rest.uniprot.org/uniprotkb/search?query=$q&format=tsv";
+print($url);
 $data = file($url);
 ?>
 <html>
