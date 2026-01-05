@@ -1,115 +1,172 @@
 <!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="css/lib/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
-<link href="css/page/custom.css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/page/custom.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
-  <nav class="navbar navbar-expand-md fixed-top>
-      <a class="navbar-brand mr-0" href="index.htm">
-      <img src="images/master_logo.jpg" class="mr-1" alt="" width="125"/> </a>
-    <div class="collapse navbar-collapse ml-5" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"> <a class="nav-link active" href="index.htm"> Home </a> </li>
-        <li class="nav-item"><a class="nav-link" href="#Presentations">Course Presentations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Exercises">Exercises</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Example_Project">Example Project</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Manuals">Tutorials & Manuals</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Sites">Personal Sites</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<main role="main" class="container">
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">DBW &ndash; Databases and Web development. 2022-23</h1>
-</div>
-<div class="row p-md-5 text-white bg-grey">
-  <div class="col-md px-0">
-    <h4><a name="Presentations" id="Presentations">Presentations</a></h4>
-    <ul>
-      <li><a href="PPT/DBW2023-Intro-Comm.pdf" target="_blank" class="text-white">Intro - Web apps overview - Computer comm.</a></li>
-      <li><a href="PPT/DBW2023-WebApplications.pdf#" target="_blank" class="text-light">Web &amp; Web applications</a></li>
-      <li><a href="PPT/DBW2023-Databases.pdf" target="_blank" class="text-light">Data Modelling and Databases</a></li>
-      <li><a href="PPT/DBW2023-PHP.pdf#" target="_blank" class="text-light">PHP Basics</a></li>
-      <li><a href="#" target="_blank"  class="text-light">Quick web design</a> (<a href="https://github.com/gbayarri/dbw" target="_blank" class="text-light">Material</a>)<br />
-      </li>
-      <!--<li><a href="PPT/hangman.pdf" target="_blank" class="text-light">Web Applications with python</a> </li>-->
-    </ul>
-    <h4><a name="Exercises" id="Exercises">Exercises</a></h4>
-    <ul>
-      <li><a href="Exercises/ExNetworkHTTP.pdf" class="text-light">Network and HTTP</a></li>
-      <li><a href="phpTest/" class="text-light">Basic PHP exercises</a></li>
-      <li><a href="Exercises/index.htm" class="text-light">Data Model Design</a></li>
-      <!--<li><a href="evaluated.htm" class="text-light">Evaluated Exercises (by 25th Feb)</a></li>-->
-      <!--<li><a href="blast_DBS.tgz" class="text-light">Blast formatted databases for SwissProt and PDB</a></li>-->
-    </ul>
-    <h4>Deadlines</h4>
-    <p>16th Jan. Software installed<br />
-      18th Jan. Project: Specification<br />
-      27th Jan. Project: Data analysis and DB design<br />
-      6th Feb. Project: Prototype demo<br />
-      20th Feb. Web site & Exercises</p>
-    <p>~5th Mar. Project operative </p>
-  </div>
-    <div class="col-md px-0">
-      <td valign="top"><h4><a name="Example_Project"></A>Example project</h4>
-        <ul>
-          <li><a href="PDBBrowser/index.php" class="text-light">PDBBrowser (PHP)</a></li>
-          <li><a href="/pypdb/" class="text-light">PDBBrowser (Flask)</a></li>
-          <li><a href="/jspdb/" class="text-light">PDBBrowser (VueJS/Nuxt)</a></li>
-          <li><a href="doc/PDBSpecification.doc" class="text-light">Specification</a></li>
-          <li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download" class="text-light class="text-light"">Blast install</a></li>
-          <li><a href="doc/PDBBrowserCode.pdf" class="text-light">PHP Code</a> <a href="py_pdb_browser/" class="text-light">Python(Flask) code</a></li>
-          <li>Code repositories:
-            <ul>
-              <li><a href="https://github.com/jlgelpi/DBW_PDBBrowser_php" target="_blank" class="text-light">PHP (and ETL)</a></li>
-              <li><a href="https://github.com/jlgelpi/DBW_PDBBrowser_Flask" target="_blank" class="text-light">Python (Flask)</a></li>
-              <li><a href="https://github.com/jlgelpi/DBW_PDBBrowser_nuxt" target="_blank" class="text-light">VueJS (Nuxt)</a></li>
-            </ul>
-          <li><a href="PDBData" class="text-light">Data</a></li>
-          <li><a href="doc/PDBBrowser.png" class="text-light">Data model</a></li>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top>
+      <a class=" navbar-brand mr-0" href="index.htm">
+      <img src="images/master_logo.jpg" class="mr-1" alt width="125" /> </a>
+      <div class="collapse navbar-collapse ml-5" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link active" href="index.htm">
+              Home </a> </li>
+          <li class="nav-item"><a class="nav-link" href="#Presentations">Course
+              Presentations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Exercises">Exercises</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Example_Project">Example Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Manuals">Tutorials &
+              Manuals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Sites">Personal
+              Sites</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
         </ul>
-        <h4><a name="Manuals"></a>Tutorials / Manuals</h4>
-        <ul>
-          <li><a href="http://www.w3schools.com/html/" target="_blank" class="text-light">HTML</a></li>
-          <li><a href="http://www.w3schools.com/css/default.asp" target="_blank" class="text-light">CSS</a></li>
-          <li><a href="http://www.w3schools.com/php/default.asp" target="_blank" class="text-light">PHP</a></li>
-          <li><a href="http://www.w3schools.com/sql/default.asp" target="_blank" class="text-light">SQL</a></li>
-          <li><a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank" class="text-light">Flask</a></li>
-          <li><a href="http://dev.mysql.com/doc/refman/5.1/en/index.html" target="_blank" class="text-light">Manual MySQL</a></li>
-          <li><a href="http://php.net/docs.php" target="_blank" class="text-light">Manual PHP</a></li>
-          <li><a href="https://docs.mongodb.org/manual/?_ga=1.77583573.1772392694.1452180360" target="_blank" class="text-light">Manual MongoDB</a></li>
-    </ul>    </div>
-    <div class="col-md px-0">
-      <h4><a name="Sites"></a>Personal sites</h4>
-      <ul>
-        <li><a href="/~u217850" target="_blank" class="text-light">Alejandro</a></li>
-        <li><a href="/~u194046" target="_blank" class="text-light">Anna</a></li>
-        <li><a href="/~u218430" target="_blank" class="text-light">Arnau</a></li>
-        <li><a href="/~u195257" target="_blank" class="text-light">Denis</a></li>
-        <li><a href="/~u217735" target="_blank" class="text-light">F. Javier</a></li>
-        <li><a href="/~u218431" target="_blank" class="text-light">Gary</a></li>
-        <li><a href="/~u217740" target="_blank" class="text-light">Laura</a></li>
-        <li><a href="/~u218066" target="_blank" class="text-light">Marc</a></li>
-        <li><a href="/~u217741" target="_blank" class="text-light">Marko</a></li>
-        <li><a href="/~u218065" target="_blank" class="text-light">Maria</a></li>
-        <li><a href="/~u217733" target="_blank" class="text-light">Nikola</a></li>
-        <li><a href="/~u218428" target="_blank" class="text-light">Núria</a></li>
-        <li><a href="/~u218429" target="_blank" class="text-light">Pau</a></li>
-        <li><a href="/~u161427" target="_blank" class="text-light">Paula</a></li>
-        <li><a href="/~u217737" target="_blank" class="text-light">Raquel</a></li>
-      </ul>
+      </div>
+    </nav>
+  </header>
+  <main role="main" class="container">
+    <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">DBW &ndash; Databases and Web development. 2025-26</h1>
     </div>
-  </div>
-</div>
-</main>
-<script src="js/lib/jquery-3.3.1.slim.min.js"></script>
-<script src="js/lib/popper.min.js"></script>
-<script src="js/lib/bootstrap.min.js"></script>
+    <div class="row p-md-5 text-white bg-grey">
+      <div class="col-md px-0">
+        <h4><a name="Presentations" id="Presentations">Presentations</a></h4>
+        <ul>
+          <li><a href="PPT/Intro-Comm.pdf" target="_blank" class="text-white">Intro - Web apps overview - Computer
+              comm.</a></li>
+          <li><a href="PPT/WebApplications.pdf#" target="_blank" class="text-light">Web &amp; Web applications</a></li>
+          <li><a href="PPT/Databases.pdf" target="_blank" class="text-light">Data Modelling and Databases</a></li>
+          <!--<li><a href="PPT/PHP.pdf#" target="_blank" class="text-light">PHP Basics</a></li>-->
+          <!--<li><a href="https://docs.google.com/presentation/d/1rgbnUopqieKkB-oBtdForP30zgGOARk8fM2ydhZPluQ/edit?usp=sharing" target="_blank"  class="text-light">Quick web design</a> (<a href="https://github.com/gbayarri/dbw" target="_blank" class="text-light">Material</a>)<br />-->
+          </li>
+          <li><a href="PPT/DBW_Python_Flask.pdf" target="_blank" class="text-light">Web Applications with python</a>          </li>
+        </ul>
+        <h4><a name="Exercises" id="Exercises">Exercises</a></h4>
+        <ul>
+          <li><a href="Exercises/ExNetworkHTTP.pdf" class="text-light">Network and
+              HTTP</a></li>
+          <li><a href="phpTest/" class="text-light">Basic PHP exercises</a></li>
+          <li><a href="Exercises/index.htm" class="text-light">Data Model
+              Design</a></li>
+          <li><a href="evaluated.htm" class="text-light">Evaluated Exercises (by
+              23th Feb)</a></li>
+          <!--<li><a href="blast_DBS.tgz" class="text-light">Blast formatted databases for SwissProt and PDB</a></li>-->
+        </ul>
+        <h4>Deadlines</h4>
+        <p>16th Jan. Software installed<br />
+          21th Jan. Project: Specification<br />
+          28th Jan. Project: Data analysis and DB design<br />
+          20th Feb. Project: Prototype demo<br />
+          24th Feb. Web site & Exercises</p>
+        <p> End March. Project operative at server. </p>
+      </div>
+      <div class="col-md px-0">
+        <td valign="top">
+          <h4><a name="Example_Projects"></a>Example project</h4>
+          <ul>
+            <li><a href="PDBBrowser/index.php" class="text-light">PDBBrowser
+                (PHP)</a></li>
+            <li><a href="/pypdb/" class="text-light">PDBBrowser (Flask)</a></li>
+            <li><a href="/jspdb/" class="text-light">PDBBrowser
+                (VueJS/Nuxt)</a></li>
+            <li><a href="doc/PDBSpecification.doc" class="text-light">Specification</a></li>
+            <li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download"
+                class="text-light class=" text-light"">Blast install</a></li>
+            <li><a href="doc/PDBBrowserCode.pdf" class="text-light">PHP Code</a>
+              <a href="py_pdb_browser/" class="text-light">Python(Flask)
+                code</a>            </li>
+            <li>Code repositories:
+              <ul>
+                <li><a href="https://github.com/jlgelpi/DBW_PDBBrowser_php" target="_blank" class="text-light">PHP (and
+                    ETL)</a></li>
+                <li><a href="https://github.com/jlgelpi/DBW_PDBBrowser_Flask" target="_blank" class="text-light">Python
+                    (Flask)</a></li>
+                <li><a href="https://github.com/jlgelpi/DBW_PDBBrowser_nuxt" target="_blank" class="text-light">VueJS
+                    (Nuxt)</a></li>
+              </ul>
+            <li><a href="PDBData" class="text-light">PDB Data</a></li>
+            <li><a href="doc/PDBBrowser.png" class="text-light">PDB Browser Data
+                model</a></li>
+            <!--<li><a href="/uniprotinfo/" class="text-light">Access to Uniprot
+                with user management (Flask by Pau)</a>-->
+          </ul>
+          <h4><a name="Manuals"></a>Tutorials / Manuals</h4>
+          <ul>
+            <li><a href="http://www.w3schools.com/html/" target="_blank" class="text-light">HTML</a></li>
+            <li><a href="http://www.w3schools.com/css/default.asp" target="_blank" class="text-light">CSS</a></li>
+            <li><a href="http://www.w3schools.com/php/default.asp" target="_blank" class="text-light">PHP</a></li>
+            <li><a href="http://www.w3schools.com/sql/default.asp" target="_blank" class="text-light">SQL</a></li>
+            <li><a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank" class="text-light">Flask</a></li>
+            <li><a href="http://dev.mysql.com/doc/refman/5.1/en/index.html" target="_blank" class="text-light">Manual
+                MySQL</a></li>
+            <li><a href="http://php.net/docs.php" target="_blank" class="text-light">Manual PHP</a></li>
+            <li><a href="https://docs.mongodb.org/manual/?_ga=1.77583573.1772392694.1452180360" target="_blank"
+                class="text-light">Manual MongoDB</a></li>
+      </ul>      </div>
+      <div class="col-md px-0">
+        <h4>Personal sites</h4>
+        <ul>
+          <li><a href="/~u319068" target="_blank" class="text-light">Alberto</a></li>
+          <li><a href="/~u318509" target="_blank" class="text-light">Austin</a></li>
+          <li><a href="/~u323620" target="_blank" class="text-light">Brigita</a></li>
+          <li><a href="/~u319576" target="_blank" class="text-light">Davit</a></li>
+          <li><a href="/~u301748" target="_blank" class="text-light">Diego M.</a></li>
+          <li><a href="/~u326264" target="_blank" class="text-light">Diego V.</a></li>
+          <li><a href="/~u300532" target="_blank" class="text-light">Domenica</a></li>
+          <li><a href="/~u319418" target="_blank" class="text-light">Elena</a></li>
+          <li><a href="/~u321539" target="_blank" class="text-light">Itxaso</a></li>
+          <li><a href="/~u322060" target="_blank" class="text-light">Júlia</a></li>
+          <li><a href="/~u319629" target="_blank" class="text-light">Leyre</a></li>
+          <li><a href="/~u316755" target="_blank" class="text-light">M. Pau</a></li>
+          <li><a href="/~u314030" target="_blank" class="text-light">Marta</a></li>
+          <li><a href="/~u321815" target="_blank" class="text-light">Nahia</a></li>
+          <li><a href="/~u322511" target="_blank" class="text-light">Núria</a></li>
+          <li><a href="/~u315524" target="_blank" class="text-light">Pablo</a></li>
+          <li><a href="/~u321778" target="_blank" class="text-light">Pau</a></li>
+          <li><a href="/~u317293" target="_blank" class="text-light">Ramona</a></li>
+          <li><a href="/~u299433" target="_blank" class="text-light">Revanth</a></li>
+          <li><a href="/~u295178" target="_blank" class="text-light">Regina</a></li>
+        </ul>
+      </div>
+      <div class="col-md px-0">
+        <h4><a name="Sites"></a>Personal sites (2024-25)</h4>
+        <ul>
+          <li><a href="/~u254848" target="_blank" class="text-light">Adam</a></li>
+          <li><a href="/~u254589" target="_blank" class="text-light">Albert</a></li>
+          <li><a href="/~u254616" target="_blank" class="text-light">Anna</a></li>
+          <li><a href="/~u254752" target="_blank" class="text-light">Clàudia</a></li>
+          <li><a href="/~u255033" target="_blank" class="text-light">Jingqi</a></li>
+<!--          <li><a href="/~u254638" target="_blank" class="text-light">Karim</a></li>-->
+          <li><a href="/~u254796" target="_blank" class="text-light">Ivon</a></li>
+          <li><a href="/~u255061" target="_blank" class="text-light">Leire</a></li>
+          <li><a href="/~u255024" target="_blank" class="text-light">Leyao</a></li>
+          <li><a href="/~u254819" target="_blank" class="text-light">Liam</a></li>
+          <li><a href="/~u243964" target="_blank" class="text-light">Llorenç</a></li>
+<!--          <li><a href="/~u254615" target="_blank" class="text-light">Maider</a></li>-->
+          <li><a href="/~u254549" target="_blank" class="text-light">Maria</a></li>
+<!--          <li><a href="/~u254762" target="_blank" class="text-light">Marta</a></li>-->
+          <li><a href="/~u254547" target="_blank" class="text-light">Martí</a></li>
+          <li><a href="/~u254754" target="_blank" class="text-light">Montse</a></li>
+          <li><a href="/~u254733" target="_blank" class="text-light">Noelia</a></li>
+          <li><a href="/~u254585" target="_blank" class="text-light">Núria</a></li>
+          <li><a href="/~u254813" target="_blank" class="text-light">Romain</a></a></li>
+          <li><a href="/~u254732" target="_blank" class="text-light">Samuel</a></li>
+          <li><a href="/~u254675" target="_blank" class="text-light">Wael</a></li>
+          <li><a href="/~u161433" target="_blank" class="text-light">Xavier</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="js/lib/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/lib/popper.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+<title>DBW. Evaluated exercises</title>
+<!-- Custom styles for this template -->
+<link href="css/page/custom.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md fixed-top"> <a class="navbar-brand mr.0" href="index.htm"><img src="images/master_logo.jpg" class="mr-1" alt="" width="125"/></a></nav>
+</header>
+<main class="container">
+<div class="row py-lg-5">
+  <h1 class="h2">DBW - Databases and Web development. 2024-25 Exercises (Deadline 23th Feb)</h1>
+</div>
+<div class="row">
+  <h4 style="width:100%">Personal web site</h4>
+  <p>A free format and contents personal web site, installed at server. 
+    It should include:
+  <ul>
+    <li>Links to Solved exercises (below)</li>
+    <li>A "project" section including link to the presentations and link to the running application</li>
+    <li>Note that the personal web site should be the default entry of your personal web site (use index.xxx)</li>
+  </ul>
+  </p>
+</div>
+<div class="row">
+<h4><a name="#blast"></a>Web application to execute an external program (CLUSTAL-Omega)</h4>
+<p>Prepare a web application (php or python/flask, running in the course server) to perform multiple sequence alignment using Clustal-Omega (executable can be obtained from http://www.clustal.org). <br/>
+  It should have
+  <ul>
+    <li>Input options:
+      <ul>
+        <li>A set of protein sequences (in FASTA)</li>
+        <li>A set of Uniprot ids (sequences could be obtained from https://www.uniprot.org/uniprot/{id}.fasta)</li>
+        <li>A File upload as alternative input source</li>
+      </ul>
+    </li>
+    <li>Program options (minimum set):
+      <ul>
+        <li>output format </li>
+        <li>(Optional) other Clustal-O options </li>
+      </ul>
+    </li>
+    <li>check input for errors (e.g. Unkown format, No sequences available, ...) and give meningful messages</li>
+    <li>format the output (be aware of the possible output formats), and allow to download results. </li>
+  </ul>
+  </p>
+</div>
+<div class="row">
+  <p>Recommended procedure:</p>
+  <ol>
+    <li>Prepare a local installation of ClustalO (<a href="http://www.clustal.org" target="_blank">[Clustal-O download and install]</a></li>
+    <li>Test the local installation using the command-line before run it through php</li>
+    <li>Examine ClustalO help to determine the options to include. </li>
+    <li>Prepare the web application. You use the Blast execution from PDBBrowser example as guideline.</li>
+    <li>Test and complete the local application</li>
+    <li>Copy the scripts to your space on the server. Adapt the details of the installation as needed, and test.</li>
+    <li>If flask/python is required, let me know</li>
+</ol>
+  
+</div>
+<div class="row">
+  <h4>Design a Data Model</h4>
+  <p>You are the manager of a bioinformatics support service and need to build a database to manage data from your users' studies. Define a data model (entities, atributes and relationships) to hold data from ONE of the following cases.</p>
+  <ul>
+    <li>A series of RNAseq (analysis).  
+      Data should include: 1) Genes included in the study. 
+      2) Reference, suppliers, for sequencing reagents and equipment used, 
+      3) Sample and user details, 
+      4) Results: genes, expression values, differential expression analysis 
+      5) References. </li>
+    <li>A workbench to perform bioinformatics analysis.
+      Data should include: 1) User information, 
+      2) Tools (including required types of data and formats for input and output and parameters), 
+      3) Data (references to actual files, that will be stored elsewhere, should include data types and formats), 
+      4) Compatibility between tools and data types and formats, 
+      5) Authorization rules users/data/tools.</li>
+  </ul>
+</div>
+</main>
+<script src="js/lib/jquery-3.3.1.slim.min.js"></script>
+<script src="js/lib/popper.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+</body>
+</html>
